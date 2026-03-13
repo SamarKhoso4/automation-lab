@@ -9,8 +9,7 @@ def main():
     }
     
     print(f"\n--- System Report for {admin} ---")
-    print(f"Date: {datetime.datetime.now().strftime('%Y-%m-%d')}")
-    
+    print(f"Report Generated on: {datetime.datetime.now().strftime('%Y-%m-%d')}")
     for item, count in inventory.items():
         if count < 5:
             status = "LOW STOCK - Order More"
